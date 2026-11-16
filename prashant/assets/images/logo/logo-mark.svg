@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Prashant Gupta logo">
+  <defs>
+    <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3d71"/>
+      <stop offset="100%" stop-color="#f9004d"/>
+    </linearGradient>
+  </defs>
+  <!-- tile -->
+  <rect x="3" y="3" width="90" height="90" rx="24" fill="#0b1120"/>
+  <rect x="4.5" y="4.5" width="87" height="87" rx="22.5" fill="none" stroke="url(#pg)" stroke-width="3" opacity="0.95"/>
+  <!-- P stem -->
+  <rect x="28" y="25" width="14" height="46" rx="7" fill="#ffffff"/>
+  <!-- P bowl as play button -->
+  <path d="M50 31 L69.5 40.8 a2.6 2.6 0 0 1 0 4.65 L50 55.2 Z"
+        fill="url(#pg)" stroke="url(#pg)" stroke-width="7" stroke-linejoin="round"/>
+  <!-- level-complete dot -->
+  <circle cx="35" cy="79" r="4.5" fill="url(#pg)"/>
+</svg>

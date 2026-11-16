@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Prashant Gupta — CV | Unity Game Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<meta name="description" content="CV of Prashant Gupta — Unity Game Developer (Mobile · VR/AR · Multiplayer · Web3), 5+ years, shipped on Google Play, App Store, Meta Quest and Steam.">
+<link rel="icon" type="image/svg+xml" href="assets/images/logo/logo-mark.svg">
+<link rel="canonical" href="https://praamix.com/prashant/cv">
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Poppins:300,400,500,600&display=swap");
+
+    :root {
+        --ink: #17202e;
+        --muted: #55627a;
+        --line: #e3e7ee;
+        --accent: #f9004d;
+        --dark: #0b1120;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body {
+        font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+        color: var(--ink);
+        background: #eef1f6;
+        font-size: 10pt;
+        line-height: 1.45;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* on-screen toolbar (hidden in print) */
+    .toolbar {
+        max-width: 210mm; margin: 0 auto; padding: 14px 4px;
+        display: flex; justify-content: space-between; align-items: center;
+    }
+    .toolbar a {
+        font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px;
+        letter-spacing: 1px; color: var(--dark);
+        border: 2px solid var(--dark); border-radius: 8px; padding: 9px 18px;
+        transition: all .25s;
+    }
+    .toolbar a.accent { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .toolbar a:hover { transform: translateY(-2px); }
+
+    .sheet {
+        max-width: 210mm; margin: 0 auto 26px; background: #fff;
+        box-shadow: 0 12px 40px rgba(23, 32, 46, .14);
+    }
+
+    /* ============ header band ============ */
+    .band {
+        background: var(--dark); color: #fff;
+        padding: 9mm 12mm 8mm;
+        display: flex; gap: 8mm; align-items: center;
+    }
+    .band img.mark { width: 21mm; height: 21mm; flex-shrink: 0; }
+    .band > div { min-width: 0; }
+    .band h1 {
+        font-family: 'Montserrat', sans-serif; font-weight: 800;
+        font-size: 24pt; letter-spacing: 3px; line-height: 1.1;
+    }
+    .band .role {
+        color: var(--accent); font-family: 'Montserrat', sans-serif;
+        font-weight: 700; font-size: 11.5pt; letter-spacing: 1.5px; margin-top: 2mm;
+    }
+    .band .contact {
+        margin-top: 3mm; font-size: 9pt; color: #aab4c8; line-height: 1.7;
+    }
+    .band .contact b { color: #e8ecf3; font-weight: 500; }
+    .band .contact span.sep { color: var(--accent); margin: 0 2mm; }
+
+    /* ============ stats strip ============ */
+    .stats {
+        display: flex; border-bottom: 1px solid var(--line);
+    }
+    .stats div {
+        flex: 1; text-align: center; padding: 4mm 2mm;
+        border-right: 1px solid var(--line);
+    }
+    .stats div:last-child { border-right: 0; }
+    .stats b {
+        display: block; font-family: 'Montserrat', sans-serif; font-weight: 800;
+        font-size: 14pt; color: var(--accent);
+    }
+    .stats span { font-size: 8pt; color: var(--muted); letter-spacing: .5px; text-transform: uppercase; }
+
+    /* ============ body ============ */
+    .content { padding: 7mm 12mm 8mm; }
+    h2 {
+        font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 11.5pt;
+        letter-spacing: 2.5px; text-transform: uppercase; color: var(--dark);
+        margin: 6mm 0 3mm; display: flex; align-items: center; gap: 4mm;
+    }
+    .content > h2:first-child { margin-top: 0; }
+    h2::after { content: ""; flex: 1; height: 2px; background: linear-gradient(90deg, var(--accent), var(--line)); }
+
+    .summary { color: var(--muted); }
+    .summary b { color: var(--ink); font-weight: 600; }
+
+    /* experience */
+    .job { margin-bottom: 4.5mm; break-inside: avoid; }
+    .job header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+    .job h3 { font-family: 'Montserrat', sans-serif; font-size: 11.5pt; font-weight: 700; }
+    .job h3 em { font-style: normal; color: var(--accent); }
+    .job .when {
+        font-family: 'Montserrat', sans-serif; font-size: 8.5pt; font-weight: 600;
+        color: #fff; background: var(--dark); border-radius: 99px; padding: 1mm 3.5mm;
+    }
+    .job .where { font-size: 9pt; color: var(--muted); margin: .5mm 0 1.5mm; }
+    .job ul { list-style: none; }
+    .job li {
+        padding-left: 5mm; position: relative; margin-bottom: 1mm; color: #303c50;
+    }
+    .job li::before {
+        content: "▸"; position: absolute; left: 0; color: var(--accent); font-size: 9pt;
+    }
+
+    /* shipped titles */
+    .titles { display: flex; gap: 4mm; }
+    .title-card {
+        flex: 1; border: 1px solid var(--line); border-radius: 3mm; padding: 3.5mm 4mm;
+        break-inside: avoid;
+    }
+    .title-card b { font-family: 'Montserrat', sans-serif; font-size: 10pt; display: block; }
+    .title-card .plat { color: var(--accent); font-size: 8pt; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+    .title-card .meta { color: var(--muted); font-size: 8.5pt; margin-top: 1mm; }
+
+    /* tech chips */
+    .tech-row { display: flex; gap: 3mm; margin-bottom: 2.2mm; break-inside: avoid; }
+    .tech-row .lbl {
+        flex: 0 0 34mm; font-family: 'Montserrat', sans-serif; font-weight: 700;
+        font-size: 8.5pt; color: var(--dark); text-transform: uppercase; letter-spacing: .5px; padding-top: 1mm;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 1.6mm; }
+    .chips i {
+        font-style: normal; font-size: 8.5pt; color: #303c50;
+        border: 1px solid var(--line); background: #f6f8fb; border-radius: 99px; padding: .8mm 2.8mm;
+    }
+
+    /* projects + education */
+    .cols { display: flex; gap: 8mm; }
+    .cols > div { flex: 1; }
+    .mini { color: #303c50; }
+    .mini li { list-style: none; padding-left: 5mm; position: relative; margin-bottom: 1.2mm; }
+    .mini li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); }
+    .mini b { font-weight: 600; }
+
+    .foot {
+        margin-top: 6mm; padding-top: 3mm; border-top: 1px solid var(--line);
+        font-size: 8.5pt; color: var(--muted); display: flex; justify-content: space-between;
+    }
+
+    @media only screen and (max-width: 640px) {
+        .band { flex-direction: column; text-align: center; gap: 4mm; padding: 8mm 6mm; }
+        .band > div { max-width: 100%; }
+        .band .contact { word-break: break-word; }
+        .band h1 { font-size: 17pt; }
+        .band .role { font-size: 9pt; }
+        .band .contact span.sep { margin: 0 1mm; }
+        .stats { flex-wrap: wrap; }
+        .stats div { flex: 1 1 40%; border-bottom: 1px solid var(--line); }
+        .content { padding: 6mm; }
+        .titles, .cols, .tech-row { flex-direction: column; }
+        .tech-row .lbl { flex: none; }
+        .job header { flex-direction: column; align-items: flex-start; gap: 1mm; }
+        .foot { flex-direction: column; gap: 1mm; }
+    }
+
+    @page { size: A4; margin: 0; }
+    @media print {
+        body { background: #fff; }
+        .toolbar { display: none; }
+        .sheet { box-shadow: none; margin: 0; max-width: none; }
+    }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+    <a href="index.html">← Back to Portfolio</a>
+    <a class="accent" href="assets/cv/Prashant_Gupta_Resume_2026.pdf" download>Download PDF</a>
+</div>
+
+<div class="sheet">
+    <div class="band">
+        <img class="mark" src="assets/images/logo/logo-mark.svg" alt="Prashant Gupta logo">
+        <div>
+            <h1>PRASHANT GUPTA</h1>
+            <div class="role">UNITY GAME DEVELOPER · MOBILE · VR/AR · MULTIPLAYER · WEB3</div>
+            <div class="contact">
+                <b>prashant1998gupta@gmail.com</b> <span class="sep">|</span> <b>+91 70071 57959</b> <span class="sep">|</span> Noida, India<br>
+                praamix.com/prashant <span class="sep">|</span> linkedin.com/in/prashantpaci <span class="sep">|</span> github.com/prashant1998gupta
+            </div>
+        </div>
+    </div>
+
+    <div class="stats">
+        <div><b>5+</b><span>Years in Unity</span></div>
+        <div><b>4</b><span>Storefronts shipped</span></div>
+        <div><b>4.9★</b><span>15K+ reviews · Meta Quest</span></div>
+        <div><b>4.6★</b><span>Metaspace · App Store</span></div>
+    </div>
+
+    <div class="content">
+        <h2>Profile</h2>
+        <p class="summary">
+            Unity game developer with <b>5+ years</b> of experience shipping titles on <b>Google Play, the App Store,
+            Meta Quest and Steam</b>. Specialist in <b>multiplayer systems</b> (Photon PUN2, Unity Netcode),
+            <b>VR/AR experiences</b> and <b>Web3 integration</b> — crypto wallets, NFT marketplaces and Polygon-chain
+            features inside Unity. Strong record in performance optimization, modular architecture and mentoring,
+            currently building physics-driven VR and PC titles at Sloppy Studios.
+        </p>
+
+        <h2>Experience</h2>
+
+        <div class="job">
+            <header>
+                <h3>Senior Game Developer — <em>Sloppy Studios</em></h3>
+                <span class="when">Sep 2025 – Present</span>
+            </header>
+            <div class="where">Noida, India · Hybrid</div>
+            <ul>
+                <li>Develop <b>Newton's Playground: Physics Sandbox</b> (Meta Quest) — physics-driven sandbox with realistic object manipulation, collision systems and performance-optimized mechanics — rated <b>4.9★ from 15,000+ player reviews</b>.</li>
+                <li>Shipped <b>Oceanside Whispers</b> on Steam (Apr 2026) — a cozy building &amp; decoration sim with precise placement tools and atmospheric customization.</li>
+                <li>Build <b>Rolling Room</b> — room design &amp; customization gameplay with modular furniture placement, snapping logic and player-driven interactions.</li>
+                <li>Deliver high-quality visuals and smooth gameplay with <b>Unity (C#, HDRP, UGUI)</b> across mobile and PC, with scalable systems and hybrid deployment support.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <header>
+                <h3>Sr. Unity Game Developer — <em>MetaSpace (Payiza)</em></h3>
+                <span class="when">Dec 2021 – Sep 2025</span>
+            </header>
+            <div class="where">Noida, India</div>
+            <ul>
+                <li>Led development of <b>Metaspace</b> — a blockchain-based multiplayer shooter on Android &amp; iOS, rated <b>4.6★ on the App Store</b>.</li>
+                <li>Built multiplayer combat with <b>Photon PUN2</b> — kill/death tracking, respawn logic and live leaderboards — lifting engagement by <b>30%</b>.</li>
+                <li>Designed modular <b>Story and Arena</b> game modes, cutting future feature-integration time by <b>40%</b>.</li>
+                <li>Integrated <b>Web3Auth</b> wallet access, an <b>NFT marketplace</b> and multi-token wallets on <b>Polygon</b>, improving transaction speed by <b>20%</b>.</li>
+                <li>Developed state-machine AI NPCs, IK animations, loadout/inventory and character customization systems.</li>
+                <li>Integrated Unity Ads &amp; IAP monetization (<b>+25% revenue</b>) and built anti-cheat / anti-piracy measures for multiplayer integrity.</li>
+                <li>Optimized multithreaded systems (<b>−20%</b> processing time) and tuned combat/progression to boost retention by <b>30%</b>; mentored junior developers.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <header>
+                <h3>Unity Developer — <em>Abhiwan Technology</em></h3>
+                <span class="when">Nov 2020 – Nov 2021</span>
+            </header>
+            <div class="where">Noida, India</div>
+            <ul>
+                <li>Prototyped core gameplay and blockchain backend for Metaspace — wallet integrations and NFT testing tools.</li>
+                <li>Developed modular UI for HUDs, login and transactions, improving feature delivery by <b>30%</b>; collaborated on Polygon smart-contract flows.</li>
+                <li>Built realistic simulations and physics in Unity and Unreal; delivered clean OOP/design-pattern code and led iterative feedback cycles (<b>−15%</b> bugs).</li>
+            </ul>
+        </div>
+
+        <h2>Shipped Titles</h2>
+        <div class="titles">
+            <div class="title-card">
+                <span class="plat">Meta Quest VR</span>
+                <b>Newton's Playground</b>
+                <div class="meta">Physics sandbox · 4.9★ · 15,000+ reviews</div>
+            </div>
+            <div class="title-card">
+                <span class="plat">Android · iOS</span>
+                <b>Metaspace</b>
+                <div class="meta">Multiplayer arena + story · 4.6★ App Store</div>
+            </div>
+            <div class="title-card">
+                <span class="plat">Steam · PC</span>
+                <b>Oceanside Whispers</b>
+                <div class="meta">Cozy building &amp; decoration sim · 2026</div>
+            </div>
+        </div>
+
+        <h2>Tech Stack</h2>
+        <div class="tech-row"><div class="lbl">Languages</div><div class="chips"><i>C# (expert)</i><i>C++</i><i>Java</i><i>Python</i><i>JavaScript</i></div></div>
+        <div class="tech-row"><div class="lbl">Engines &amp; XR</div><div class="chips"><i>Unity 3D</i><i>HDRP / URP</i><i>UGUI</i><i>Unreal Engine</i><i>AR Foundation</i><i>ARKit / ARCore</i><i>XR Interaction</i><i>VRTK</i><i>Hurricane VR</i></div></div>
+        <div class="tech-row"><div class="lbl">Multiplayer</div><div class="chips"><i>Photon PUN2</i><i>Mirror</i><i>Unity Netcode</i><i>Firebase</i><i>WebSockets</i><i>REST APIs</i><i>Node.js</i></div></div>
+        <div class="tech-row"><div class="lbl">Web3</div><div class="chips"><i>Web3Auth</i><i>Nethereum</i><i>NFT Marketplaces</i><i>Polygon</i><i>Multi-token Wallets</i></div></div>
+        <div class="tech-row"><div class="lbl">Practices</div><div class="chips"><i>OOP &amp; SOLID</i><i>Design Patterns</i><i>Modular Architecture</i><i>Async Programming</i><i>Object Pooling</i><i>State Machines</i><i>Performance Profiling</i></div></div>
+        <div class="tech-row"><div class="lbl">Tools</div><div class="chips"><i>Git / GitHub</i><i>Bitbucket</i><i>Plastic SCM</i><i>Jira</i><i>Confluence</i><i>Rider</i><i>Visual Studio</i><i>Postman</i></div></div>
+
+        <div class="cols">
+            <div>
+                <h2>Selected Projects</h2>
+                <ul class="mini">
+                    <li><b>ARRISE / AR Image Tracking</b> — live WebAR ad platform (ar.rionick.com) + open-source demo</li>
+                    <li><b>QuotePro</b> — interactive proposals &amp; quotations SaaS, live on Vercel</li>
+                    <li><b>MultiLingo</b> — file translation into 100+ languages (CSV/Excel/JSON/XML), live web app</li>
+                    <li><b>Portfolio Mini Arcade</b> — 10 playable canvas games, hand-written vanilla JS (on my site)</li>
+                    <li><b>Hodl Valley</b> — 3D multiplayer city builder with backend integration</li>
+                    <li><b>VR Baseball</b> — VR sports simulation with real-time controls</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Education</h2>
+                <ul class="mini">
+                    <li><b>MCA</b> — IGNOU, The People's University (2021)</li>
+                    <li><b>B.Sc.</b> — Bundelkhand University, Jhansi (2017)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="foot">
+            <span>Languages: English · Hindi</span>
+            <span>Portfolio: praamix.com/prashant</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
